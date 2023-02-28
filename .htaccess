@@ -16,4 +16,9 @@
 	Header always set Access-Control-Expose-Headers "Authorization"
     	Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With, X-CSRF-Token, Accept, Access-Control-Allow-Headers, Access-Control-Allow-Methods"
 </IfModule>
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
 
